@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <style>
+         body {
+            background-image: url("data:image/jpeg;base64,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");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: darken !important;
+        }
+
+        #main {
+            height: 100vh;
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        h3 {
+            font-family: cursive;
+        }
+
+        form {
+            width: 700px;
+            height: 420px;
+            /* border: 1px solid rgba(255, 255, 255, 0.459); */
+            display: flex;
+            flex-direction: column;
+            padding: 12px;
+        }
+
+        input {
+            border: 1px solid  rgba(211, 211, 211, 0.267) !important;
+            color: white;
+        }
+
+        .add {
+            background-color: rgba(53, 51, 51, 0.648);
+            color: white;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <div class="border border-dark" id="main">
+        <h3 class="p-5">Edit Page</h3>
+        <form action="/updateData?id=<%=edit.id%>" method="post" class="rounded rounded-4 shadow-lg">
+            <input type="text" name="name" id="" value="<%=edit.name%>" placeholder="Title" class="form-control mt-3 bg-transparent text-white">
+            <input type="text" name="auth" id="" value="<%=edit.auth%>" placeholder="Author" class="form-control mt-3 bg-transparent text-white">
+            <input type="number" name="year" id="" value="<%=edit.year%>" placeholder="Published year" class="form-control mt-3 bg-transparent text-white">
+            <input type="number" name="pages" id="" value="<%=edit.pages%>" placeholder="Pages" class="form-control mt-3 bg-transparent text-white">
+            <input type="number" name="prices" id="" value="<%=edit.prices%>" placeholder="Prices" class="form-control mt-3 bg-transparent text-white">
+            <input type="text" name="copies" id="" value="<%=edit.copies%>" placeholder="Published copies" class="form-control mt-3 bg-transparent text-white">
+            <input type="Submit" class="btn mt-4 add">
+        </form>
+    </div>
+</body>
+
+</html>
